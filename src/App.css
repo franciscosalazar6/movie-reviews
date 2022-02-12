@@ -1,0 +1,39 @@
+.stars {
+  display: flex;
+}
+
+.stars.disabled {
+  pointer-events: none;
+}
+
+.stars a {
+  opacity: 50%;
+  cursor: pointer;
+  padding: 3px;
+}
+
+.stars:hover a {
+  opacity: 100%;
+}
+
+.stars a:hover ~ a {
+  opacity: 50%
+}
+
+.stars a.active {
+  opacity: 100%;
+}
+
+.container {
+  
+  background-color: rgb(231, 95, 95);
+}
+
+.body {
+  margin-right: auto;
+  background-color: rgb(107, 219, 219);
+}
+
+button {
+  background-color: rgb(255, 255, 255);
+}
